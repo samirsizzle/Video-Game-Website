@@ -40,3 +40,44 @@ li {
 li:hover {
     background-color: #666;
 }
+
+#registerbutton {
+    background-color: orange;
+    border:none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+form {
+  position: absolute;
+  top: 10;
+  left: 0;
+  margin: 10px;
+}
+
+form label {
+  display: block;
+  width: 100px;
+  margin-left: 20px;
+  text-align: right;
+  margin-left: 0;
+  left: 30px;
+  transform: translate(-50%, -50%);
+}
+
+form input {
+  padding: 1px;
+  border: 1px solid #ccc;
+}
+
+label {
+  position: relative;
+  left: -100px;
+  top: 6;
+}
