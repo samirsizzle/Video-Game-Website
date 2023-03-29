@@ -81,3 +81,31 @@ label {
   left: -100px;
   top: 6;
 }
+
+.register-button {
+  position: relative;
+  background-color: white;
+  color: black;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  width: auto;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.register-button::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid black;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: -20px;
+  width: auto;
+}
