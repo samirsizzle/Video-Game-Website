@@ -1,16 +1,19 @@
 body {
-    background-image: url(splashfightersbackground.jpg);
-    background-repeat: repeat-x;
+    background-image: url(desktop-1920x1080.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
+    background-size: cover;
 }
 
 h1 {
     color: white;
 }
 
-ul { /* Want a better shade color. aquamarine is a placeholder color */
+.user-info-header {
+  color: white;
+  margin-top: -10px;
+}
+
+ul { /* I want a better shade color. current color is placeholder */
     border: 2px solid lightblue;
     list-style-type: none;
     margin: 0;
@@ -24,7 +27,7 @@ ul { /* Want a better shade color. aquamarine is a placeholder color */
     background-color: aquamarine;
 }
 
-li { /* Remove underline */
+li { /* Need to remove underline */
     flex-grow: 1;
     text-align: center;
     display: inline;
@@ -54,7 +57,32 @@ li:hover {
     cursor: pointer;
 }
 
-form {
+#registerbutton:hover {
+    background-color: rgb(250, 124, 7);
+}
+
+.register-button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent #fff;
+  }
+
+.register-button:hover {
+    color: red;
+}
+
+.form-container {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: skyblue;
   position: absolute;
   top: 10;
   left: 0;
@@ -76,6 +104,7 @@ form input {
   border: 1px solid #ccc;
 }
 
+
 label {
   position: relative;
   left: -100px;
@@ -90,7 +119,7 @@ label {
   border: none;
   border-radius: 5px;
   font-size: 12px;
-  width: auto;
+  font-weight: bold;
   line-height: 1;
   cursor: pointer;
 }
@@ -101,11 +130,37 @@ label {
   height: 0;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid black;
+  border-left: 5px solid skyblue;
   position: absolute;
   right: 100%;
   top: 50%;
   transform: translateY(-50%);
   margin-right: -20px;
   width: auto;
+}
+
+.circle-button {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #53e6c6; 
+  color: blue; 
+  font-size: 16px; 
+  border: none; 
+  cursor: pointer; 
+  margin-left: 115px;
+  margin-top: -30px;
+}
+
+.circle-button:hover {
+   color: red;
+}
+
+a {
+  color: rgb(74, 143, 233);
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
 }
