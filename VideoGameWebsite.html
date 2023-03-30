@@ -8,24 +8,29 @@
 <h1>Splashfighters</h1> <!-- Placeholder title -->
 
 <nav>
-<ul> <!-- Border for these three sections -->
-    <li><a href="#BEGINNERS GUIDE">BEGINNERS GUIDE</a></li> 
+  <ul>
+    <li><a href="#BEGINNERS GUIDE">BEGINNERS GUIDE</a></li>
     <li><a href="#FORUMS">FORUMS</a></li>
     <li><a href="#BUY B!(Cyberbux)" class="my-class">BUY B!(Cyberbux)</a></li>
-</ul>
+  </ul>
 </nav>
 </header>
 <body>
- 
+
 <button id="registerbutton">REGISTER NOW!!</button>
 
-<form action="/test_page.php">
-  <label for="username" style="color:white; display:block; text-align: left; margin-left: 20px;">USER ID</label>
-  <input type="text" id="username" name="username"><br><br>
-  <label for="password" style="color:white; display:block; text-align: left; margin-left: 20px;">PASSWORD</label>
-  <input type="text" id="password" name="password"><br><br>
-  <button type="submit" class="register-button">REGISTER></button> <!-- I'm probably going to re-do this because I need to the text to auto-fit the button -->
-</form>
+<div class="form-container">
+  <h4 class="user-info-header">USER INFO</h4>
+  <form action="/test_page.php">
+    <label for="username" style="color:white; display:block; text-align: left; margin-left: 20px;">USER ID</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="password" style="color:white; display:block; text-align: left; margin-left: 20px;">PASSWORD</label>
+    <input type="text" id="password" name="password"><br><br>
+    <button type="submit" class="register-button">REGISTER</button><br>
+    <button class="circle-button">LOGIN</button>
+    <a href="forget_password.php" style="display:block; text-align: left;">Forget Password</a>
+  </form>
+</div>
 
 </body>
 </html>
