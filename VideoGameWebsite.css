@@ -27,13 +27,17 @@ ul { /* I want a better shade color. current color is placeholder */
     background-color: aquamarine;
 }
 
-li { /* Need to remove underline */
+li { 
     flex-grow: 1;
     text-align: center;
     display: inline;
     padding: 10px 15px;
     border-right: 0.5px solid black;
     font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul li a {
+    text-decoration: none;
 }
 
 .my-class {
