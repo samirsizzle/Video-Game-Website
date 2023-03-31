@@ -1,4 +1,4 @@
-<!-- The website I am envisoning is more complex than I thought. I'll come back to this when I'm ready, and comfortable. 
+<!-- The website I am envisoning is more complex than I thought. I'll come back to this when I'm ready, and comfortable. -->
 
 <!DOCTYPE html> 
 <html>
@@ -12,7 +12,7 @@
 <nav>
   <ul>
     <li><a href="#BEGINNERS GUIDE">BEGINNERS GUIDE</a></li>
-    <li><a href="#FORUMS">FORUMS</a></li>
+    <li><a href="#FORUMS" title="FORUMS">FORUMS</a></li>
     <li><a href="#BUY B!(Cyberbux)" class="my-class">BUY B!(Cyberbux)</a></li>
   </ul>
 </nav>
@@ -28,11 +28,66 @@
     <input type="text" id="username" name="username"><br><br>
     <label for="password" style="color:white; display:block; text-align: left; margin-left: 20px;">PASSWORD</label>
     <input type="text" id="password" name="password"><br><br>
-    <button type="submit" class="register-button">REGISTER</button><br> <!-- I might redo code to make the text cover almost the whole button -->
+    <button type="submit" class="register-button">REGISTER</button><br>
     <button class="circle-button">LOGIN</button>
     <a href="forget_password.php" style="display:block; text-align: left;">Forget Password</a>
   </form>
 </div>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="accessory1.jpg" style="width:100%">
+    <div class="text">Platzen Konig</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="accessory2.jpg" style="width:100%">
+    <div class="text">Fatal Strife</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="accessory3.jpg" style="width:100%">
+    <div class="text"><b>Jyuzumaru</b></div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<nav class="vertical-nav">
+  <div class="header">
+    <a href="#" title="DOWNLOAD">DOWNLOAD</a>
+  </div>
+  <div class="container">
+    <div class="header">
+      <a href="#" title="GUIDE">GUIDE</a>
+    </div>
+    <div class="list">
+      <ul class="menulist">
+        <li class="menulist" a href="GAME FEATURE">GAME FEATURE</li>
+      </ul>
+    </div>
+    <div class="list">
+    <ul class="menulist">
+      <li class="menulist" a href="GAME FEATURE">GAME START</li>
+</nav>
+
+<script src="videogamewebsite.js"></script>
 
 </body>
 </html>
