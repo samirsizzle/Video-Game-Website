@@ -143,7 +143,7 @@ label {
   width: auto;
 }
 
-.circle-button { /* adding a better shading color to this */
+.circle-button {
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -157,14 +157,194 @@ label {
 }
 
 .circle-button:hover {
-   color: red;
+    color: red;
 }
 
 a {
-  color: rgb(74, 143, 233);
+    color: rgb(74, 143, 233);
 }
 
 a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+*{box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+  margin-top: 25px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.vertical-nav {
+  position: fixed;
+  top: 50%;
+  left: 250px;
+  width: 235px;
+  transform: translate(-100%, -50%);
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+.header a {
+  display: block;
+  padding: 3px;
+  background-color: #1f71dd;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header a:hover {
+  color: yellow
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  margin-left: 0px;
+  padding-left: -100px;
+}
+
+.list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list li {
+  margin-bottom: 10px;
+}
+
+.list a {
+  display: block;
+  padding: 3px;
+  background-color: #1f71dd;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.list a:hover {
+  color: yellow
+}
+
+.vertical-nav ul:nth-child(2) {
+  margin: 0;
+  padding: 0;
+}
+
+.menulist {
+  background-color: skyblue;
+  color: white;
+  position: relative;
+  width: 235px;
+  right: 10;
+  padding: 5px 5px 5px 20px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.menulist:hover {
+  background-color: rgb(231, 228, 29);
   color: red;
-  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) { /* Need to make changes for this perform, and look better on mobile 
+  /* styles for small screens */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* styles for medium screens */
+}
+
+@media only screen and (min-width: 1025px) {
+  /* styles for large screens */
 }
