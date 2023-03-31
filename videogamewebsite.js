@@ -1,4 +1,4 @@
-// The slideshow function is causing some issues; Images not appearing, not automatically transitioning to the next image. I'll come back when I understand this more 
+// The slideshow function is causing some issues; Images not appearing unless I click the arrow, not automatically transitioning to the next image. I'll come back when I understand this more 
 
 let slideIndex = 1;
 showSlides(slideIndex);
